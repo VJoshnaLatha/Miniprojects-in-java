@@ -1,0 +1,52 @@
+Inheritance work space
+
+
+import java.util.Scanner;
+class Animal
+{
+    void Dog()
+    {
+        System.out.println("Eating");
+    }
+    void Cat()
+    {
+        System.out.println("Meow");
+    }
+    void Rabbit()
+    {
+        System.out.println("Eating");
+    }
+}
+class Pets extends Animal
+{
+    public static void Parrot()
+    {
+        System.out.println("Talking");
+    }
+    public static void Sparrow()
+    {
+        System.out.println("Sounds");
+    }
+}
+class Inherit extends Pets
+{
+    public static void Buffalo()
+    {
+        System.out.println("Drinking");
+    }
+    public static void Deer()
+    {
+        System.out.println("Running");
+    }
+    public static void main(String args[])
+    {
+        Pets a=new Pets();
+        a.Parrot();
+        a.Sparrow();
+        a.Dog();
+        a.Cat();
+        a.Rabbit();
+        Buffalo();
+        Deer();
+    }
+}
